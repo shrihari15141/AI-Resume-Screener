@@ -1,8 +1,5 @@
 # AI Resume Screening & Recruitment System
 
-# Live Demo
-
-PythonAnywhere: [Resumescreener.pythonanywhere.com](https://resumescreener.pythonanywhere.com/)
 
 Production-style AI resume screening web application for recruiters. The system creates jobs, analyzes job requirements, uploads large batches of resumes, parses candidate information, scores candidates with deterministic weighted matching, ranks candidates, explains recommendations, supports status workflows, compares candidates, and exports CSV/JSON results.
 
