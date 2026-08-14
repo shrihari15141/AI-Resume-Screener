@@ -94,28 +94,6 @@ Open the Vite URL shown in the terminal, usually:
 http://localhost:5173
 ```
 
-## Sample Data
-
-Sample job and resume fixtures are included in:
-
-```text
-sample_data/job_description.md
-sample_data/resumes/
-sample_outputs/
-```
-
-Seed the local SQLite database:
-
-```bash
-python backend/scripts/seed_sample.py
-```
-
-Demo login after seeding:
-
-```text
-recruiter@example.com
-Password123
-```
 
 ## API Overview
 
