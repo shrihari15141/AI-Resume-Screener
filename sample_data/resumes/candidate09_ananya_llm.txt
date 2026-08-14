@@ -1,0 +1,19 @@
+Ananya Gupta
+Email: ananya.gupta@example.com
+Phone: +91 96666 55544
+Location: Delhi
+GitHub: https://github.com/ananya-rag
+
+Education
+BTech Computer Science, North Institute, 2025
+
+Skills
+Python, LLM, RAG, LangChain, Vector Database, NLP, SQL, Git, FastAPI
+
+Experience
+AI Intern, SearchWorks, 10 months
+
+Projects
+Knowledge Base Assistant: Built semantic retrieval over documents using vector search.
+Resume Explanation Generator: Produced grounded candidate fit summaries from structured resume data.
+

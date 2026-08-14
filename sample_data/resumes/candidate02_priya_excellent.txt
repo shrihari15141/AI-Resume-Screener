@@ -1,0 +1,24 @@
+Priya Sharma
+Email: priya.sharma@example.com
+Phone: +91 91234 56780
+Location: Hyderabad
+LinkedIn: https://linkedin.com/in/priyasharma
+GitHub: https://github.com/priya-ml
+
+Education
+BTech Computer Science, XYZ University, 2025
+
+Skills
+Python, Machine Learning, Natural Language Processing, SQL, Flask REST API, Git, Docker, React, LangChain, RAG, LLM
+
+Experience
+AI Developer Intern, DataWorks, 1 year
+
+Projects
+RAG Research Assistant: Built retrieval augmented generation workflows using embeddings and LangChain.
+Resume Parser API: Created Flask APIs for document parsing and candidate ranking.
+
+Certifications
+Machine Learning Specialization
+Python for Data Science Certificate
+

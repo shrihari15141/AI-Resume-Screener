@@ -1,0 +1,18 @@
+Kavya Iyer
+Email: kavya.iyer@example.com
+Phone: +91 92222 33344
+Location: Mysuru
+
+Education
+MSc Artificial Intelligence, State University, 2026
+BSc Mathematics, State University, 2024
+
+Skills
+Python, NumPy, Data Analysis, Excel, SQL
+
+Experience
+Academic project experience, 4 months
+
+Projects
+Student Performance Prediction: Used regression models and SQL data preparation.
+

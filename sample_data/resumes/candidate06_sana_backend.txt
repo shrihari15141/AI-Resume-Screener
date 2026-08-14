@@ -1,0 +1,20 @@
+Sana Ali
+Email: sana.ali@example.com
+Phone: +91 95555 11100
+Location: Mumbai
+
+Education
+MCA, National College, 2024
+
+Skills
+Python, Django, Flask, REST API, PostgreSQL, SQL, Docker, Linux, Git
+
+Experience
+Backend Developer Intern, CloudServe, 1.5 years
+
+Projects
+Document Upload Service: Validated files, stored metadata, and handled background jobs.
+
+Certifications
+Backend API Development Certificate
+

@@ -1,0 +1,17 @@
+Rohan Das
+Email: rohan.das@example.com
+Phone: +91 93333 22211
+Location: Kolkata
+
+Education
+BCom, East City College, 2022
+
+Skills
+Excel, Power BI, Communication, Sales Analysis
+
+Experience
+Business Analyst, RetailCo, 2 years
+
+Projects
+Sales Dashboard: Created monthly reports in Excel and Power BI.
+

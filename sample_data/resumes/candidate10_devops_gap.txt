@@ -1,0 +1,17 @@
+Nitin Verma
+Email: nitin.verma@example.com
+Phone: +91 97777 66655
+Location: Noida
+
+Education
+BTech Computer Engineering, 2021
+
+Skills
+Docker, Kubernetes, AWS, Linux, Git, Python scripting
+
+Experience
+DevOps Associate, DeployNow, 3 years
+
+Projects
+Containerized Flask Service: Packaged APIs with Docker and deployed them to AWS.
+

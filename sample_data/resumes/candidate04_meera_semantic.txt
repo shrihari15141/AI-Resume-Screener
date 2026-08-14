@@ -1,0 +1,18 @@
+Meera Nair
+Email: meera.nair@example.com
+Phone: +91 94444 33322
+Location: Kochi
+
+Education
+MSc Data Science, Kerala Institute, 2026
+
+Skills
+Predictive Modeling, Decision Trees, KNN, Text Classification, Named Entity Recognition, SQLite, FastAPI, Git
+
+Experience
+Research Assistant, University Lab, 1 year
+
+Projects
+Named Entity Resume Extractor: Extracted names, emails, skills, and education from unstructured resumes.
+Predictive Hiring Dashboard: Compared candidate profiles with job descriptions.
+

@@ -1,0 +1,5 @@
+Rank,Candidate Name,Email,Phone,Overall Score,Required Skills Score,Experience Score,Education Score,Projects Score,Preferred Skills Score,Certification Score,Semantic Score,Status,Recommendation
+1,Priya Sharma,priya.sharma@example.com,+91 91234 56780,94.2,100,100,100,100,100,100,88,Analyzed,Shortlist
+2,Rahul Kumar,rahul.kumar@example.com,+91 98765 43210,86.8,100,100,100,90,40,70,82,Analyzed,Shortlist
+3,Rohan Das,rohan.das@example.com,+91 93333 22211,35.5,0,100,0,20,0,70,18,Analyzed,Reject
+

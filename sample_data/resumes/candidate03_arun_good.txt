@@ -1,0 +1,18 @@
+Arun Kumar
+Email: arun.kumar@example.com
+Phone: +91 90000 11122
+Location: Chennai
+
+Education
+BSc Computer Science, City College, 2024
+
+Skills
+Python, MySQL, scikit-learn, Regression, Classification, GitHub, Flask, Pandas
+
+Experience
+Data Science Trainee, Insight Labs, 8 months
+
+Projects
+Customer Churn Prediction: Built classification models using scikit-learn.
+API Dashboard: Developed Flask endpoints and SQL reports for model outputs.
+

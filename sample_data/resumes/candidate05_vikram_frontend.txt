@@ -1,0 +1,17 @@
+Vikram Rao
+Email: vikram.rao@example.com
+Phone: +91 98888 77766
+Location: Pune
+
+Education
+BTech Information Technology, 2023
+
+Skills
+React, JavaScript, TypeScript, HTML, CSS, Tailwind CSS, GitHub, REST API
+
+Experience
+Frontend Developer, BrightApps, 2 years
+
+Projects
+Recruiter Dashboard: Built responsive cards, tables, filters, and analytics charts.
+

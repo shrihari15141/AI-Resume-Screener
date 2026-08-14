@@ -1,0 +1,14 @@
+Candidate Portfolio
+
+Education
+BCA, Local College, 2026
+
+Skills
+Python, SQL, Machine Learning, Flask, Git
+
+Experience
+Internship project experience, 3 months
+
+Projects
+Smart City Management System: Built backend APIs and SQL queries for city service records.
+

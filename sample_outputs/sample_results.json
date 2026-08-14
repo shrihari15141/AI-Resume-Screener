@@ -1,0 +1,30 @@
+{
+  "job": "Junior AI Research Associate",
+  "results": [
+    {
+      "rank": 1,
+      "candidate": "Priya Sharma",
+      "overall_score": 94.2,
+      "category": "Excellent Match",
+      "matched_skills": ["Python", "Machine Learning", "NLP", "SQL", "Flask", "Git", "LLM", "RAG", "LangChain", "Docker", "React"],
+      "recommendation": "Shortlist"
+    },
+    {
+      "rank": 2,
+      "candidate": "Rahul Kumar",
+      "overall_score": 86.8,
+      "category": "Strong Match",
+      "matched_skills": ["Python", "Machine Learning", "NLP", "SQL", "Flask", "Git", "React"],
+      "recommendation": "Shortlist"
+    },
+    {
+      "rank": 3,
+      "candidate": "Rohan Das",
+      "overall_score": 35.5,
+      "category": "Weak Match",
+      "missing_required_skills": ["Python", "Machine Learning", "NLP", "SQL", "Flask", "Git"],
+      "recommendation": "Reject"
+    }
+  ]
+}
+

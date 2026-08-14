@@ -1,0 +1,23 @@
+Rahul Kumar
+Email: rahul.kumar@example.com
+Phone: +91 98765 43210
+Location: Bengaluru
+LinkedIn: https://linkedin.com/in/rahulkumar
+GitHub: https://github.com/rahul-ai
+
+Education
+BCA, ABC College, 2026
+
+Skills
+Python, SQL, Flask, Machine Learning, NLP, scikit-learn, Pandas, NumPy, Git, GitHub, React
+
+Experience
+Python Intern, ABC Technologies, 6 months
+
+Projects
+AI Resume Screening System: Parsed PDF and DOCX resumes, extracted skills, calculated weighted scores, and ranked candidates.
+Semantic Search for Jobs: Used sentence embeddings for matching candidate profiles to job descriptions.
+
+Certifications
+Artificial Intelligence Fundamentals
+
