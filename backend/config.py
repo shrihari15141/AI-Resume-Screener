@@ -7,7 +7,8 @@ from dotenv import load_dotenv
 
 
 BASE_DIR = Path(__file__).resolve().parent
-load_dotenv(BASE_DIR.parent / ".env")
+PROJECT_ROOT = BASE_DIR.parent
+load_dotenv(PROJECT_ROOT / ".env")
 
 
 def _database_url() -> str:
@@ -29,17 +30,33 @@ def _upload_folder() -> str:
     return str(path)
 
 
+def _cors_origins() -> list[str]:
+    raw = os.getenv("CORS_ORIGINS")
+    flask_env = (os.getenv("FLASK_ENV") or "production").lower()
+    if raw is None:
+        if flask_env == "development":
+            return ["http://localhost:5173", "http://127.0.0.1:5173"]
+        return []
+
+    origins = [origin.strip().rstrip("/") for origin in raw.split(",") if origin.strip()]
+    if flask_env == "production":
+        return [origin for origin in origins if origin != "*"]
+    return origins
+
+
 class Config:
-    SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-change-me")
-    JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "dev-jwt-secret-change-me")
+    SECRET_KEY = os.getenv("SECRET_KEY") or "dev-secret-change-me"
+    JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY") or "dev-jwt-secret-change-me"
     SQLALCHEMY_DATABASE_URI = _database_url()
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOAD_FOLDER = _upload_folder()
+    STATIC_FOLDER = str(BASE_DIR / "static")
+    CORS_ORIGINS = _cors_origins()
     MAX_UPLOAD_MB = int(os.getenv("MAX_UPLOAD_MB", "20"))
     MAX_BATCH_UPLOAD_MB = int(os.getenv("MAX_BATCH_UPLOAD_MB", "1024"))
     MAX_CONTENT_LENGTH = MAX_BATCH_UPLOAD_MB * 1024 * 1024
     JSON_SORT_KEYS = False
 
-    LLM_API_KEY = os.getenv("LLM_API_KEY", "")
-    LLM_MODEL = os.getenv("LLM_MODEL", "")
-    LLM_API_URL = os.getenv("LLM_API_URL", "")
+    LLM_API_KEY = os.getenv("LLM_API_KEY") or ""
+    LLM_MODEL = os.getenv("LLM_MODEL") or ""
+    LLM_API_URL = os.getenv("LLM_API_URL") or ""

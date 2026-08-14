@@ -22,16 +22,19 @@ def find_possible_duplicate(job_id: int, profile: dict[str, Any], resume_text: s
     for candidate in candidates:
         score = 0.0
         reasons = []
+        direct_identifier_match = False
         if email and candidate.email and email == candidate.email.lower():
             score = max(score, 100.0)
             reasons.append("email")
+            direct_identifier_match = True
         if phone and candidate.phone and phone == candidate.phone:
             score = max(score, 96.0)
             reasons.append("phone")
+            direct_identifier_match = True
         if name and candidate.name and name == candidate.name.lower():
             score = max(score, 85.0)
             reasons.append("name")
-        if candidate.resume and candidate.resume.raw_text:
+        if not direct_identifier_match and candidate.resume and candidate.resume.raw_text:
             similarity = text_similarity(resume_text, candidate.resume.raw_text)
             if similarity >= 88:
                 score = max(score, similarity)
@@ -39,4 +42,3 @@ def find_possible_duplicate(job_id: int, profile: dict[str, Any], resume_text: s
         if score >= 85 and (best is None or score > best["similarity"]):
             best = {"candidate_id": candidate.id, "similarity": score, "reasons": reasons}
     return best
-

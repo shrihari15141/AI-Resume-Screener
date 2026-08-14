@@ -1,12 +1,15 @@
 # AI Resume Screening & Recruitment System
 
+[Live Demo: Click here to see the full stack website](https://Resumescreener.pythonanywhere.com/)
+
+
 Production-style AI resume screening web application for recruiters. The system creates jobs, analyzes job requirements, uploads large batches of resumes, parses candidate information, scores candidates with deterministic weighted matching, ranks candidates, explains recommendations, supports status workflows, compares candidates, and exports CSV/JSON results.
 
 This project is structured for the ROOMAN Junior AI Research Associate 24-Hour AI Agent Challenge.
 
 ## Features
 
-- Recruiter registration, login, logout, and protected API routes
+- Direct recruiter workflow without a required frontend login page
 - Job creation, editing, closing, and job requirement analysis
 - Batch resume upload for PDF, DOCX, and TXT files
 - Parsing with PyMuPDF for PDF and python-docx for DOCX
@@ -50,6 +53,7 @@ No virtual environment is created or committed. Runtime folders are ignored:
 - `node_modules/`
 - `backend/instance/`
 - `backend/uploads/`
+- `backend/static/`
 - `.env`
 
 This keeps the GitHub repository small.
@@ -94,6 +98,26 @@ Open the Vite URL shown in the terminal, usually:
 http://localhost:5173
 ```
 
+The Vite dev server proxies `/api` requests to the Flask backend on `http://localhost:5000`.
+
+For a production-style local run, build the frontend and let Flask serve it:
+
+```bash
+cd frontend
+npm run build
+cd ../backend
+python app.py
+```
+
+Then open:
+
+```text
+http://localhost:5000/
+```
+
+## PythonAnywhere Deployment
+
+See `README_DEPLOY.md` for the single-URL PythonAnywhere setup. In production, Flask serves `backend/static/index.html`, Vite assets under `/assets/*`, and the backend API under `/api/*`.
 
 ## API Overview
 
@@ -175,10 +199,11 @@ DATABASE_URL=
 UPLOAD_FOLDER=
 MAX_UPLOAD_MB=
 MAX_BATCH_UPLOAD_MB=
+CORS_ORIGINS=
 LLM_API_KEY=
 LLM_MODEL=
 LLM_API_URL=
-VITE_API_URL=
+VITE_API_URL=/api
 ```
 
 The app runs without an LLM API key by using deterministic extraction and explanation fallbacks.

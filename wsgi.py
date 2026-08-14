@@ -1,16 +1,23 @@
-# wsgi.py — entrypoint for WSGI servers (gunicorn)
-# Update the import below if your Flask app object is defined elsewhere.
-try:
-    from app import app  # common: app.py defines `app`
-except Exception:
-    try:
-        from main import app  # common alternative: main.py
-    except Exception:
-        try:
-            from resumescreener import app  # package-style import
-        except Exception:
-            raise RuntimeError("Could not import Flask 'app'. Edit wsgi.py to import your Flask app object.")
+from __future__ import annotations
 
-# When run directly, start the Flask dev server (not used in production on Render)
+import os
+import sys
+from pathlib import Path
+
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+BACKEND_ROOT = PROJECT_ROOT / "backend"
+
+if str(BACKEND_ROOT) not in sys.path:
+    sys.path.insert(0, str(BACKEND_ROOT))
+
+os.chdir(PROJECT_ROOT)
+
+from app import app as application  # noqa: E402
+
+
+app = application
+
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    application.run(host="0.0.0.0", port=5000)
